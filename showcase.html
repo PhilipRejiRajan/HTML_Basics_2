@@ -16,7 +16,7 @@
                 text-align: center;
             }
 
-            header, section {
+            header, section, article, footer {
                 width: 80%;
                 margin: auto;
             }
@@ -91,9 +91,24 @@
                 padding: 5px;
             }
 
+            blockquote {
+                background-color: white;
+                padding: 20px;
+                text-align: justify;
+            }
+
+            footer {
+                background-color: #e6ffcc;
+                text-align: center;
+            }
+
+            #footer-para {
+                padding: 10px;
+            }
+
             @media screen and (max-width: 800px) {
 
-                header, section {
+                header, section, article, footer {
                     width: 100%;
                 }
 
@@ -140,6 +155,7 @@
                 <a class="nav-links" href="#products" title="Go to Products section.">Products</a>
                 <a class="nav-links" href="#demo" title="Go to Demo section.">Demo</a>
                 <a class="nav-links" href="#inquiry" title="Go to Inquiry section.">Inquiry</a>
+                <a class="nav-links" href="#testimonials" title="Go to Testimonials section.">Testimonials</a>
                 <a class="nav-links" href="#contact" title="Go to Contact Us section.">Contact Us</a>
              </nav>
         </header>
@@ -300,5 +316,31 @@
                 <input type="reset">
             </form>
         </section>
+
+        <!--Testimonials Section-->
+        <article id="testimonials-section">
+            <h3 id="testimonials">Testimonials</h3>
+            <blockquote>
+                    <i>Mikki - TEAMGROUP SSD</i><br><br>
+                    Upgraded a friend's PC which was a ryzen 7 2700x with a gigabyte a320,
+                    speeds went to 2100mbs and has a 5 Year warranty too.
+                     All in all excellent for the price.
+            </blockquote>
+            <blockquote>
+                    <i>Rahul - Crucial RAM</i><br><br>
+                    Crucial RAM is always the best, no doubt. 
+                    I have had issues with other brand RAMs like frequent crashing, blue screen, etc. 
+                    Only issue here was I wish I had received it fast. Why would it take over two weeks I don't fathom. 
+                    If you need to change your RAM, order it much earlier.
+            </blockquote>
+        </article>
+
+        <!--Footer Section-->
+        <footer id="contact">
+            <p id="footer-para">
+                &copy; Copyright 2025.<br><br>
+                Contact: <a href="mailto:sample@gmail.com" title="Send email">Email</a>
+            </p>
+        </footer>
     </body>
 </html>
