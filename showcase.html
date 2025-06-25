@@ -73,6 +73,15 @@
                 height: 170px;
             }
 
+            iframe {
+                width: 900px;
+                height: 600px;
+            }
+
+            #video-embed-div {
+                text-align: center;
+            }
+
             @media screen and (max-width: 800px) {
 
                 header, section {
@@ -98,6 +107,11 @@
                     max-width: 100%;
                     max-height: 100%;
                 }
+
+                iframe {
+                    max-width: 90%;
+                    max-height: 300px;
+                }
             }
         </style>
     </head>
@@ -111,6 +125,7 @@
             <nav id="header-nav">
                 <a class="nav-links" href="#header" title="Go Home.">Home</a>
                 <a class="nav-links" href="#products" title="Go to Products section.">Products</a>
+                <a class="nav-links" href="#demo" title="Go to Demo section.">Demo</a>
                 <a class="nav-links" href="#contact" title="Go to Contact Us section.">Contact Us</a>
              </nav>
         </header>
@@ -237,6 +252,16 @@
                     </td>
                 </tr>
             </table>
+        </section>
+
+        <!--Product Demo Section-->
+        <section id="demo-section">
+            <h3 id="demo">Product Demo</h3>
+            
+            <!--Video Embed-->
+            <div id="video-embed-div">
+                <iframe src="https://www.youtube.com/embed/TW7pnxEcEkM"></iframe>
+            </div>
         </section>
     </body>
 </html>
