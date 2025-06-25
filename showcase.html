@@ -10,14 +10,27 @@
                 background-color: #ccff99;
             }
 
-            header {
+            h3 {
+                background-color: #e6ffcc;
+                padding: 15px;
+                text-align: center;
+            }
+
+            header, section {
                 width: 80%;
                 margin: auto;
             }
 
-            .logo {
+            #logo {
                 padding: 5px;
                 float: left;
+                width: 150px;
+                height: 150px;
+            }
+
+            #ssd, #ram, #charger, #battery {
+                max-width: 700px;
+                max-height: 500px;
             }
 
             .nav-links:link {
@@ -35,24 +48,195 @@
                 background-color: #00e600;
             }
 
-            .header-nav {
+            #header-nav {
                 padding: 50px;
                 margin-left: 170px;
                 background-color: #e6ffcc;
             }
 
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                background-color: #e6ffcc;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 15px;
+                text-align: center;
+            }
+
+            #header {
+                height: 170px;
+            }
+
+            @media screen and (max-width: 800px) {
+
+                header, section {
+                    width: 100%;
+                }
+
+                #logo {
+                    width: 30%;
+                    height: auto;
+                    float: none;
+                }
+
+                #header-nav {
+                    width: auto;
+                    margin-left: 0;
+                }
+
+                #products-section {
+                    margin-top: 123px;
+                }
+
+                #ssd, #ram, #charger, #battery {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
         </style>
     </head>
 
     <body>
-        <header>
-            <img class="logo" src="assets/sitelogo.jpeg" alt="LG Gram Logo" width="150" height="150">
 
-            <nav class="header-nav">
-                <a class="nav-links" href="#" title="Go Home.">Home</a>
-                <a class="nav-links" href="#" title="Go to Products section.">Products</a>
-                <a class="nav-links" href="#" title="Go to Contact Us section.">Contact Us</a>
+        <!--Header Section-->
+        <header id="header">
+            <img id="logo" src="assets/sitelogo.jpeg" alt="LG Gram Logo">
+
+            <nav id="header-nav">
+                <a class="nav-links" href="#header" title="Go Home.">Home</a>
+                <a class="nav-links" href="#products" title="Go to Products section.">Products</a>
+                <a class="nav-links" href="#contact" title="Go to Contact Us section.">Contact Us</a>
              </nav>
         </header>
+
+        <!--Products Section-->
+        <section id="products-section">
+            <h3 id="products">Products</h3>
+
+            <!--Product 1-->
+            <table>
+                <tr>
+                    <th>Product Name:</th>
+                    <td>TEAMGROUP MP33 256GB NVME SSD</td>
+                </tr>
+                <tr>
+                    <th>Price:</th>
+                    <td>Rs. 1,900/-</td>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>
+                        Brand Name: TEAMGROUP<br>
+                        Hard Disk Type: SSD<br>
+                        Storage Capacity: 256GB<br>
+                        Network Connectivity Technology: NVME<br>
+                        Form Factor: 2280 inches<br>
+                        Compatible Devices: Laptop, Desktop<br>
+                        Weight: 6 Grams
+                    </td>
+                </tr>
+                <tr>
+                    <th>Image:</th>
+                    <td>
+                        <img id="ssd" src="assets/ssd.jpg" alt="TEAMGROUP SSD">
+                    </td>
+                </tr>
+            </table>
+
+            <!--Product 2-->
+            <table>
+                <tr>
+                    <th>Product Name:</th>
+                    <td>Crucial RAM 16GB DDR4</td>
+                </tr>
+                <tr>
+                    <th>Price:</th>
+                    <td>Rs. 3,600/-</td>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>
+                        Brand Name: Crucial<br>
+                        RAM Technology: DDR4<br>
+                        RAM Size: 16GB<br>
+                        Memory Speed: 3200MHz<br>
+                        Form Factor: SO-DIMM<br>
+                        Compatible Devices: Laptop<br>
+                        Weight: 9 Grams
+                    </td>
+                </tr>
+                <tr>
+                    <th>Image:</th>
+                    <td>
+                        <img id="ram" src="assets/ram.jpg" alt="Crucial RAM">
+                    </td>
+                </tr>
+            </table>
+
+            <!--Product 3-->
+            <table>
+                <tr>
+                    <th>Product Name:</th>
+                    <td>LG Gram Laptop Charger 19V</td>
+                </tr>
+                <tr>
+                    <th>Price:</th>
+                    <td>Rs. 4,000/-</td>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>
+                        Brand Name: VHBW<br>
+                        Connectivity Technology: USB<br>
+                        Input Voltage: 240V<br>
+                        Output: 19V 3.42A 65W<br>
+                        Connector Type: 2 Pin<br>
+                        Compatible Devices: LG Gram Laptop<br>
+                        Weight: 326 Grams
+                    </td>
+                </tr>
+                <tr>
+                    <th>Image:</th>
+                    <td>
+                        <img id="charger" src="assets/charger.jpg" alt="LG Gram Charger">
+                    </td>
+                </tr>
+            </table>
+
+            <!--Product 4-->
+            <table>
+                <tr>
+                    <th>Product Name:</th>
+                    <td>Laptop Battery Compatible for LG Gram</td>
+                </tr>
+                <tr>
+                    <th>Price:</th>
+                    <td>Rs. 4,200/-</td>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>
+                        Brand Name: VANPIR<br>
+                        Battery Cell Composition: Lithium Ion<br>
+                        Battery Capacity: 9450 mAh<br>
+                        Specifications: 72Wh 7.7V<br>
+                        Compatible Devices: LG Gram Laptop<br>
+                        Weight: 371.3 Grams
+                    </td>
+                </tr>
+                <tr>
+                    <th>Image:</th>
+                    <td>
+                        <img id="battery" src="assets/battery.jpg" alt="LG Gram Battery">
+                    </td>
+                </tr>
+            </table>
+        </section>
     </body>
 </html>
